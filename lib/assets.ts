@@ -1,4 +1,4 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/iaflmun";
+const basePath = "/iaflmun";
 
 export function asset(path: string) {
   if (!path.startsWith("/")) {
