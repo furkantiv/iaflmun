@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   },
   description:
     "IAFLMUN 2025 is a boutique Model United Nations conference in Istanbul featuring curated committees, elevated hospitality, and mentorship-driven diplomacy.",
-  metadataBase: new URL("https://iaflmun.org"),
+  metadataBase: new URL("https://iaflmun.com"),
   openGraph: {
     title: "IAFLMUN 2025 | Istanbul Academy for Leadership MUN",
     description:
       "Experience IAFLMUN 2025 — curated committees, bespoke socials, and mentorship-focused diplomacy in Istanbul.",
-    url: "https://iaflmun.org",
+    url: "https://iaflmun.com",
     siteName: "IAFLMUN 2025",
     type: "website",
   },
