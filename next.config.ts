@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const repoBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "/iaflmun";
 const isProd = process.env.NODE_ENV === "production" && !!repoBasePath;
 
 const nextConfig: NextConfig = {
