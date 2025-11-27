@@ -38,8 +38,8 @@ jobs:
             echo "NEXT_PUBLIC_BASE_PATH=/${{ github.event.repository.name }}" >> $GITHUB_ENV
           fi
 
-      - name: Build & export static site
-        run: npm run deploy
+      - name: Build static site
+        run: npm run build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
