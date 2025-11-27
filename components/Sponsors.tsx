@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { asset } from "@/lib/assets";
 
 const sponsors = [
-  { name: "Espressolab", src: "/images/sponsors/espressolab.png" },
-  { name: "Eti", src: "/images/sponsors/eti.png" },
-  { name: "Pin Drinks", src: "/images/sponsors/pin.png" },
-  // { name: "Sponsor 4", src: "/images/sponsors/sponsor4.png" },
+  { name: "Espressolab", src: asset("/images/sponsors/espressolab.png") },
+  { name: "Eti", src: asset("/images/sponsors/eti.png") },
+  { name: "Pin Drinks", src: asset("/images/sponsors/pin.png") },
+  // { name: "Sponsor 4", src: asset("/images/sponsors/sponsor4.png") },
 ];
 
 export default function Sponsors() {
@@ -45,8 +46,6 @@ export default function Sponsors() {
         <div className="mt-8 px-4 py-8 flex items-center justify-center gap-4 sm:gap-6 overflow-hidden">
           {rotated.map((sponsor, index) => {
             const isActive = index === centerIndex;
-            console.log(sponsor.src);
-
             return (
               <div
                 key={sponsor.name}

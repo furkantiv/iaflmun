@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { asset } from "@/lib/assets";
 
 export default function Letter() {
   return (
@@ -10,7 +10,9 @@ export default function Letter() {
         {/* Kağıt zemin */}
         <div
           className="relative bg-no-repeat bg-cover bg-center rounded-md px-6 sm:px-10 py-10 sm:py-12 shadow-xl"
-          style={{ backgroundImage: "url('/images/letter-paper.jpg')" }}
+          style={{
+            backgroundImage: `url('${asset("/images/letter-paper.jpg")}')`,
+          }}
         >
           <h2 className="section-title section-title--dark">
             Letter from the SG

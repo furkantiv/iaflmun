@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { asset } from "@/lib/assets";
 
 const navItems = [
   { label: "OUR TEAM", href: "/team" },
@@ -19,7 +20,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo + Title */}
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/iaflmun-logo.png" alt="IAFLMUN Logo" width={50} height={50} />
+          <Image
+            src={asset("/iaflmun-logo.png")}
+            alt="IAFLMUN Logo"
+            width={50}
+            height={50}
+          />
           <span className="text-xl font-semibold tracking-wide">IAFLMUN</span>
         </Link>
 

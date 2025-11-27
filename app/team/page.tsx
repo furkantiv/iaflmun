@@ -1,35 +1,36 @@
 import Image from "next/image";
+import { asset } from "@/lib/assets";
 
 const teamMembers = [
   {
     name: "Aylin Demir",
     role: "Secretary-General",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
   {
     name: "Kerem Yildiz",
     role: "Director-General",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
   {
     name: "Selin Kara",
     role: "Head of Academics",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
   {
     name: "Mert Can",
     role: "Head of Logistics",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
   {
     name: "Deniz Acar",
     role: "Head of Public Relations",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
   {
     name: "Naz Sönmez",
     role: "Head of Finance",
-    photo: "/images/team/placeholder.svg",
+    photo: asset("/images/team/placeholder.svg"),
   },
 ];
 

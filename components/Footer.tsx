@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { asset } from "@/lib/assets";
 
 const conferenceLinks = [
   { label: "Home", href: "/" },
@@ -60,7 +61,12 @@ export default function Footer() {
     <footer className="w-full bg-[#5a0000] text-[#f5eadd] pt-16 pb-10 px-6">
       <div className="max-w-7xl mx-auto grid gap-12 lg:grid-cols-[1.2fr_2fr]">
         <div className="space-y-5">
-          <Image src="/iaflmun-logo.png" alt="IAFLMUN Logo" width={250} height={250} />
+          <Image
+            src={asset("/iaflmun-logo.png")}
+            alt="IAFLMUN Logo"
+            width={250}
+            height={250}
+          />
           <Link href="/" className="inline-flex flex-col gap-2">
             <span className="text-3xl font-semibold tracking-[0.3em]">
               IAFLMUN<span className="text-[#eab07c]">25</span>

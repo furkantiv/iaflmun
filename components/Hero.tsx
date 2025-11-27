@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { asset } from "@/lib/assets";
 
 type TimeLeft = {
   days: number;
@@ -46,7 +47,7 @@ export default function Hero() {
     <section
       className="relative w-full min-h-[80vh] flex items-center justify-center"
       style={{
-        backgroundImage: "url('/images/hero-bg.jpg')",
+        backgroundImage: `url('${asset("/images/hero-bg.jpg")}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -60,7 +61,7 @@ export default function Hero() {
           {/* Kuzgun */}
           <div className="hidden sm:block absolute -top-40 left-8">
             <Image
-              src="/images/raven.png"
+              src={asset("/images/raven.png")}
               alt="Raven"
               width={150}
               height={150}
