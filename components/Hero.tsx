@@ -12,7 +12,7 @@ type TimeLeft = {
 };
 
 // Etkinlik tarihini buradan ayarla
-const EVENT_DATE = new Date("2025-12-12T09:00:00+03:00").getTime();
+const EVENT_DATE = new Date("2025-12-05T09:00:00+03:00").getTime();
 
 function calculateTimeLeft(): TimeLeft {
   const now = new Date().getTime();

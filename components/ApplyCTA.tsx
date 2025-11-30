@@ -14,7 +14,7 @@ export default function ApplyCTA() {
             className="absolute -inset-4 bg-[#5a0000]/30 blur-[90px]"
           />
           <Link
-            href="/contact"
+            href="/apply"
             className="relative inline-flex items-center justify-center rounded-2xl bg-[#5a0000] px-10 py-4 text-lg font-semibold text-[#f5eadd] shadow-2xl shadow-[#5a0000]/40 transition-colors hover:bg-[#4a0000]"
           >
             Apply Now

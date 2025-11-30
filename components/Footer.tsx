@@ -4,15 +4,15 @@ import { asset } from "@/lib/assets";
 
 const conferenceLinks = [
   { label: "Home", href: "/" },
-  { label: "Secretariat", href: "/team" },
-  { label: "Directorate", href: "/team#directorate" },
-  { label: "Venue", href: "/about" },
-  { label: "Schedule", href: "/faq" },
+  { label: "About", href: "/about" },
+  { label: "Committees", href: "/committees" },
+  { label: "Our Team", href: "/team" },
+  { label: "Apply", href: "/apply" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
-const committeeLinks = ["WHO", "UNEP", "UNICEF", "WIPO", "UNWOMEN", "UNSC"];
+
 
 const legalLinks = [
   { label: "Terms and Conditions", href: "#" },
@@ -22,7 +22,7 @@ const legalLinks = [
 const socials = [
   {
     label: "Instagram",
-    href: "https://instagram.com/iaflmun",
+    href: "https://www.instagram.com/iafl_mun",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -41,8 +41,8 @@ const socials = [
     ),
   },
   {
-    label: "GitHub",
-    href: "https://github.com/iaflmun",
+    label: "TikTok",
+    href: "https://www.tiktok.com/@iafl_mun",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -50,7 +50,21 @@ const socials = [
         className="w-6 h-6"
         aria-hidden
       >
-        <path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.015 8.59 7.2 9.99.525.105.72-.225.72-.51 0-.255-.015-1.095-.015-1.995-2.64.48-3.33-.645-3.54-1.23-.12-.3-.63-1.23-1.08-1.485-.37-.195-.9-.675-.015-.69.84-.015 1.44.78 1.635 1.11.96 1.62 2.49 1.17 3.105.885.09-.705.375-1.17.675-1.44-2.34-.27-4.8-1.17-4.8-5.205 0-1.17.42-2.13 1.11-2.88-.105-.27-.48-1.395.105-2.91 0 0 .9-.285 2.94 1.095a9.78 9.78 0 0 1 5.34 0c2.04-1.395 2.94-1.095 2.94-1.095.585 1.515.21 2.64.105 2.91.69.75 1.11 1.695 1.11 2.88 0 4.05-2.475 4.935-4.815 5.205.39.33.735.96.735 1.95 0 1.41-.015 2.55-.015 2.91 0 .285.195.63.72.51 4.185-1.41 7.2-5.34 7.2-9.99C22.5 6.2 17.8 1.5 12 1.5" />
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+      </svg>
+    ),
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/iaflmun/",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="w-6 h-6"
+        aria-hidden
+      >
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
   },
@@ -97,23 +111,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <p className="text-xs uppercase tracking-[0.35em] text-[#f5eadd]/70 mb-4">
-              Committees
-            </p>
-            <ul className="space-y-2">
-              {committeeLinks.map((link) => (
-                <li key={link}>
-                  <Link
-                    href="/committees"
-                    className="hover:text-white transition-colors"
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-[#f5eadd]/70 mb-4">
@@ -144,6 +141,8 @@ export default function Footer() {
                   href={social.href}
                   aria-label={social.label}
                   className="hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {social.icon}
                 </Link>
