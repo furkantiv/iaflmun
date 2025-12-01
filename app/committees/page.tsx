@@ -11,8 +11,9 @@ export default function CommitteesPage() {
     <main className="page-shell page-shell--dark py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4">
+        <p className="section-label section-label--light">COMMITTEES</p>
           <h1 className="section-title section-title--light">
-          COMMITTEES
+          Our Committees
           </h1>
         </div>
         <CommitteesGrid />

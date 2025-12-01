@@ -30,6 +30,7 @@ export default function AboutPage() {
     <main className="py-16 px-6">
       <div className="max-w-5xl mx-auto space-y-16">
         <section className="space-y-6 text-center">
+        <p className="section-label">ABOUT</p>
           <h1 className="section-title">
             A boutique conference curated in Istanbul
           </h1>
@@ -44,11 +45,7 @@ export default function AboutPage() {
         <section className="rounded-[40px] bg-[#3a0000] text-[#f5eadd] p-10 space-y-6">
           <h2 className="text-3xl font-semibold">Our Story</h2>
           <p className="text-base leading-relaxed">
-            What began as a small diplomacy club has evolved into an
-            internationally recognized MUN experience. Each edition intentionally
-            scales without losing our boutique charm — carefully chosen venues,
-            curated committees, and keynote speakers who are active diplomats,
-            authors, and climate advocates.
+          Started as a 3 year old school club that only sends their students to local MUNs and teaches them how to MUN- to an organization that took us almost a year to complete to reach a dream we’ve barely dared to imagine before.
           </p>
         </section>
       </div>

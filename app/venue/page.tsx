@@ -15,10 +15,9 @@ export default function VenuePage() {
     <main className="py-16 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
         <section className="text-center space-y-4">
-          <h1 className="section-title">VENUE</h1>
-          <p className="section-subtitle text-base md:text-lg max-w-3xl mx-auto">
-          Our conference will take place in...
-          </p>
+        <p className="section-label">VENUE</p>
+          <h1 className="section-title">Our conference will take place in...</h1>
+         
         </section>
 
         <section className="space-y-8">
@@ -63,13 +62,16 @@ export default function VenuePage() {
               <h3 className="text-xl font-semibold text-[#3a0000]">
                 Public Transportation
               </h3>
+              
               <p className="text-sm text-[#2a0505] opacity-75 leading-relaxed">
-                The venue is accessible via metro, bus, and ferry lines. 
-                Specific route information will be shared with registered delegates.
+                <strong>Bus:</strong> 10E, 8E, 20K, 9K, 14ES Göztepe Bridge - Bulgurlu direction, get off and walk for 10 minutes.
               </p>
-            
-
-            
+              <p className="text-sm text-[#2a0505] opacity-75 leading-relaxed">
+                <strong>Metro:</strong> M4 Göztepe Exit
+              </p>
+              <p className="text-sm text-[#2a0505] opacity-75 leading-relaxed">
+                <strong>Metrobus:</strong> Transfer from the Uzunçayır stop to the metro M4 Ünalan stop and walk to the Göztepe stop.
+              </p>
           </div>
         </section>
       </div>

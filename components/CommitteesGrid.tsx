@@ -50,7 +50,7 @@ const committees: Committee[] = [
     driveLink: "https://drive.google.com",
   },
   {
-    name: "EUC",
+    name: "European Council",
     level: "SPECIAL",
     theme: "Cuban Missile Crisis — alternate realities",
     tone: "bg-gradient-to-br from-[#1b1b2f] to-[#53354a]",

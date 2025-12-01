@@ -6,34 +6,58 @@ export const metadata = {
 
 type Package = {
   name: string;
-  price: string;
+  prices: {
+    early: string;
+    regular: string;
+    late: string;
+  };
   formUrl: string;
 };
 
 const packages: Package[] = [
   {
     name: "Delegate",
-    price: "1.200₺",
+    prices: {
+      early: "1.000₺",
+      regular: "1.100₺",
+      late: "1.200₺",
+    },
     formUrl: "https://forms.google.com/your-form-url-delegate",
   },
   {
     name: "Delegation",
-    price: "1.150₺",
+    prices: {
+      early: "950₺",
+      regular: "1.050₺",
+      late: "1.150₺",
+    },
     formUrl: "https://forms.google.com/your-form-url-chair",
   },
   {
     name: "Press",
-    price: "800₺",
+    prices: {
+      early: "600₺",
+      regular: "700₺",
+      late: "800₺",
+    },
     formUrl: "https://forms.google.com/your-form-url-press",
   },
   {
     name: "Administrative Staff",
-    price: "800₺",
+    prices: {
+      early: "600₺",
+      regular: "700₺",
+      late: "800₺",
+    },
     formUrl: "https://forms.google.com/your-form-url-observer",
   },
   {
-    name: "Chairboard Member",
-    price: "800₺",
+    name: "Chairboard Member",
+    prices: {
+      early: "600₺",
+      regular: "700₺",
+      late: "800₺",
+    },
     formUrl: "https://forms.google.com/your-form-url-crisis",
   },
 ];
@@ -44,6 +68,7 @@ export default function ApplyPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
+          <p className="section-label">APPLY</p>
           <h1 className="section-title">Apply as a
           </h1>
         </div>
@@ -57,12 +82,23 @@ export default function ApplyPage() {
             >
               <div className="mb-6">
                 
-                <h3 className="text-2xl font-semibold text-[#3a0000] mb-2">
+                <h3 className="text-2xl font-semibold text-[#3a0000] mb-4">
                   {pkg.name}
                 </h3>
                 
-                <div className="text-4xl font-bold text-[#5a0000] mb-6">
-                  {pkg.price}
+                <div className="space-y-2 mb-6">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-[#3a0000] font-medium">Early Bird:</span>
+                    <span className="text-xl font-bold text-[#5a0000]">{pkg.prices.early}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-[#3a0000] font-medium">Regular:</span>
+                    <span className="text-xl font-bold text-[#5a0000]">{pkg.prices.regular}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-[#3a0000] font-medium">Late:</span>
+                    <span className="text-xl font-bold text-[#5a0000]">{pkg.prices.late}</span>
+                  </div>
                 </div>
               </div>
 

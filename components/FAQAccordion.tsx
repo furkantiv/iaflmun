@@ -35,18 +35,22 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
                 {item.question}
               </span>
               <span
-                className={`text-2xl font-light transition-transform ${
+                className={`text-2xl font-light transition-transform duration-300 ease-in-out ${
                   isOpen ? "rotate-45" : ""
                 }`}
               >
                 +
               </span>
             </button>
-            {isOpen && (
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
               <div className="px-6 pb-6 text-sm md:text-base text-[#3a0000]/80 leading-relaxed">
                 {item.answer}
               </div>
-            )}
+            </div>
           </div>
         );
       })}

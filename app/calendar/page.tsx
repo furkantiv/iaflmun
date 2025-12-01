@@ -13,40 +13,40 @@ interface ScheduleItem {
 
 const schedule: ScheduleItem[] = [
   {
-    time: "08:30 - 09:00",
-    day1: "Kahvaltı",
-    day2: "Kahvaltı",
-    day3: "Kahvaltı",
+    time: "08.30-09.30",
+    day1: "-",
+    day2: "Breakfast",
+    day3: "Breakfast",
   },
   {
     time: "09:00 - 10:30",
-    day1: "Kayıt",
-    day2: "Oturum V",
-    day3: "Oturum IX",
+    day1: "-",
+    day2: "Session IV",
+    day3: "Session IX",
   },
   {
     time: "10:30 - 11:00",
-    day1: "Açılış Töreni",
+    day1: "Registration",
     day2: "Coffee Break",
     day3: "Coffee Break",
   },
   {
     time: "11:00 - 12:30",
-    day1: "",
-    day2: "Oturum VI",
-    day3: "Oturum X",
+    day1: "Opening Ceremony",
+    day2: "Session V",
+    day3: "Session X",
   },
   {
     time: "12:30 - 14:00",
-    day1: "Öğle Yemeği",
-    day2: "Öğle Yemeği",
-    day3: "Öğle Yemeği",
+    day1: "Lunch",
+    day2: "Lunch",
+    day3: "Lunch",
   },
   {
     time: "14:00 - 15:30",
-    day1: "Oturum I",
-    day2: "Oturum VII",
-    day3: "Oturum XI",
+    day1: "Session I",
+    day2: "Session VI",
+    day3: "Session XI",
   },
   {
     time: "15:30 - 16:00",
@@ -56,9 +56,9 @@ const schedule: ScheduleItem[] = [
   },
   {
     time: "16:00 - 17:30",
-    day1: "Oturum II",
-    day2: "Oturum VIII",
-    day3: "Oturum XII",
+    day1: "Session II",
+    day2: "Session VII",
+    day3: "Session XII",
   },
   {
     time: "17:30 - 18:00",
@@ -68,9 +68,9 @@ const schedule: ScheduleItem[] = [
   },
   {
     time: "18:00 - 19:30",
-    day1: "Oturum III",
-    day2: "",
-    day3: "Kapanış Töreni",
+    day1: "Session III",
+    day2: "Session VIII",
+    day3: "Closing Ceremony",
   },
 ];
 
@@ -133,37 +133,63 @@ export default function CalendarPage() {
               </div>
 
               {/* Mobile Cards */}
-              <div className="md:hidden space-y-4">
-                {schedule.map((item, index) => (
-                  <div
-                    key={index}
-                    className="rounded-2xl bg-[#3a0000] text-[#f5eadd] p-5 space-y-3"
-                  >
-                    <div className="font-semibold text-lg border-b border-[#f5eadd]/20 pb-2">
-                      {item.time}
-                    </div>
-                    <div className="grid grid-cols-3 gap-3 text-sm">
-                      <div>
-                        <div className="text-[#f5eadd]/70 text-xs mb-1">Day 1</div>
-                        <div>{item.day1 || "-"}</div>
-                      </div>
-                      <div>
-                        <div className="text-[#f5eadd]/70 text-xs mb-1">Day 2</div>
-                        <div>{item.day2 || "-"}</div>
-                      </div>
-                      <div>
-                        <div className="text-[#f5eadd]/70 text-xs mb-1">Day 3</div>
-                        <div>{item.day3 || "-"}</div>
-                      </div>
-                    </div>
+              <div className="md:hidden space-y-6">
+                {/* Day 1 */}
+                <div className="rounded-2xl bg-gradient-to-br from-[#3a0000] to-[#5a1a1a] text-[#f5eadd] p-5 space-y-4">
+                  <h3 className="font-semibold text-xl border-b border-[#f5eadd]/20 pb-2">
+                    Day 1
+                  </h3>
+                  <div className="space-y-3">
+                    {schedule.map((item, index) => (
+                      item.day1 && (
+                        <div key={index} className="border-b border-[#f5eadd]/10 pb-3 last:border-0 last:pb-0">
+                          <div className="text-[#f5eadd]/70 text-xs mb-1">{item.time}</div>
+                          <div className="text-sm font-medium">{item.day1}</div>
+                        </div>
+                      )
+                    ))}
                   </div>
-                ))}
+                </div>
+
+                {/* Day 2 */}
+                <div className="rounded-2xl bg-gradient-to-br from-[#3a0000] via-[#4a0a1a] to-[#2a0a2a] text-[#f5eadd] p-5 space-y-4">
+                  <h3 className="font-semibold text-xl border-b border-[#f5eadd]/20 pb-2">
+                    Day 2
+                  </h3>
+                  <div className="space-y-3">
+                    {schedule.map((item, index) => (
+                      item.day2 && (
+                        <div key={index} className="border-b border-[#f5eadd]/10 pb-3 last:border-0 last:pb-0">
+                          <div className="text-[#f5eadd]/70 text-xs mb-1">{item.time}</div>
+                          <div className="text-sm font-medium">{item.day2}</div>
+                        </div>
+                      )
+                    ))}
+                  </div>
+                </div>
+
+                {/* Day 3 */}
+                <div className="rounded-2xl bg-gradient-to-br from-[#3a0000] to-[#1a0a2a] text-[#f5eadd] p-5 space-y-4">
+                  <h3 className="font-semibold text-xl border-b border-[#f5eadd]/20 pb-2">
+                    Day 3
+                  </h3>
+                  <div className="space-y-3">
+                    {schedule.map((item, index) => (
+                      item.day3 && (
+                        <div key={index} className="border-b border-[#f5eadd]/10 pb-3 last:border-0 last:pb-0">
+                          <div className="text-[#f5eadd]/70 text-xs mb-1">{item.time}</div>
+                          <div className="text-sm font-medium">{item.day3}</div>
+                        </div>
+                      )
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Additional Information */}
-          <div className="rounded-[40px] bg-[#3a0000] text-[#f5eadd] p-8 md:p-10 space-y-6">
+          <div className="rounded-[40px] bg-gradient-to-br from-[#3a0000] to-[#1a0a2a] text-[#f5eadd] p-8 md:p-10 space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold">
               Conference Overview
             </h2>

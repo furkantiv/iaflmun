@@ -70,13 +70,13 @@ export default function Hero() {
           </div>
 
           {/* Başlık */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[0.25em]">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold ">
             IAFLMUN
           </h1>
 
           {/* Sayaç */}
           <div className="mt-8">
-            <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 font-mono text-2xl sm:text-3xl md:text-4xl">
+            <div className="flex justify-center gap-4 sm:gap-6 md:gap-6 font-mono text-2xl sm:text-3xl md:text-4xl text-center">
               <span>{format(timeLeft.days)}</span>
               <span>:</span>
               <span>{format(timeLeft.hours)}</span>
@@ -86,7 +86,7 @@ export default function Hero() {
               <span>{format(timeLeft.seconds)}</span>
             </div>
 
-            <div className="mt-2 flex justify-center gap-6 sm:gap-10 text-[10px] sm:text-xs uppercase tracking-[0.25em]">
+            <div className="mt-2 flex justify-center gap-6 sm:gap-10 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-center">
               <span>days</span>
               <span>hours</span>
               <span>minutes</span>

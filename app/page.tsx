@@ -9,7 +9,7 @@ export default function Home() {
       <main>
         <Hero />
         <Sponsors />
-        <Letter />
+        {/* <Letter /> */}
         <ApplyCTA />
       </main>
     </div>

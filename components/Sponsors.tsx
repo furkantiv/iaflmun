@@ -1,75 +1,85 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 import { asset } from "@/lib/assets";
 
-const sponsors = [
+type Sponsor = {
+  name: string;
+  src?: string;
+};
+
+const sponsors: Sponsor[] = [
   { name: "Espressolab", src: asset("/images/sponsors/espressolab.png") },
-  { name: "Eti", src: asset("/images/sponsors/eti.png") },
-  { name: "Pin Drinks", src: asset("/images/sponsors/pin.png") },
-  // { name: "Sponsor 4", src: asset("/images/sponsors/sponsor4.png") },
+  { name: "PIN", src: asset("/images/sponsors/pin.png") },
+  { name: "BeanQ Coffee" },
+  { name: "Morfose" },
+  { name: "Super Energy" },
+  { name: "Çiğköfteci Ömer Aybak" },
+  { name: "Kızılay Natural Mineral Water" },
+  { name: "Frango Döner" },
+  { name: "PIN Drinks" },
+  { name: "Kuzey Yapı" },
+  { name: "Uyumsoft" },
+  { name: "Mostra Social" },
+  { name: "B Helluva Studio"},
 ];
 
 export default function Sponsors() {
-  const [offset, setOffset] = useState(0);
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
-  // Her 4 saniyede bir sıradaki sponsoru ortaya al
-  useEffect(() => {
-    if (sponsors.length === 0) return;
-
-    const interval = setInterval(() => {
-      setOffset((prev) => (prev + 1) % sponsors.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const handleImageError = (sponsorName: string) => {
+    setFailedImages((prev) => new Set(prev).add(sponsorName));
+  };
 
   if (sponsors.length === 0) return null;
 
-  // Diziyi kaydırarak farklı sponsorları ortaya getiriyoruz
-  const rotated = sponsors.map(
-    (_, i) => sponsors[(i + offset) % sponsors.length]
+  // Render sponsor card component
+  const SponsorCard = ({ sponsor, index }: { sponsor: Sponsor; index: number }) => (
+    <div
+      key={`${sponsor.name}-${index}`}
+      className="flex-shrink-0 mx-6 sm:mx-10"
+    >
+      <div className="bg-[#f5eadd] rounded-xl px-8 py-5 flex items-center justify-center min-w-[180px] sm:min-w-[240px] h-[80px] sm:h-[90px] shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+        {!sponsor.src || failedImages.has(sponsor.name) ? (
+          <span className="text-[#5a0000] font-bold text-base sm:text-lg text-center leading-tight">
+            {sponsor.name}
+          </span>
+        ) : (
+          <Image
+            src={sponsor.src}
+            alt={sponsor.name}
+            width={200}
+            height={60}
+            className="object-contain max-h-[50px] sm:max-h-[60px] w-auto"
+            onError={() => handleImageError(sponsor.name)}
+          />
+        )}
+      </div>
+    </div>
   );
-  const centerIndex = Math.floor(rotated.length / 2);
 
   return (
-    <section
-      id="sponsors"
-      className="w-full bg-[#5a0000] py-20"
-    >
-      <div className="max-w-7xl mx-auto text-center"> 
-        <h2 className="section-title section-title--light">
-          Our Sponsors
-        </h2>
+    <section id="sponsors" className="w-full bg-[#5a0000] py-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto text-center px-4">
+        <h2 className="section-title section-title--light">Our Sponsors</h2>
 
-        <div className="mt-8 px-4 py-8 flex items-center justify-center gap-4 sm:gap-6 overflow-hidden">
-          {rotated.map((sponsor, index) => {
-            const isActive = index === centerIndex;
-            return (
-              <div
-                key={sponsor.name}
-                className={[
-                  " bg-[#f5eadd] rounded-2xl shadow-lg flex items-center justify-center transition-all duration-500 mx-2",
-                  "px-4 py-3 sm:px-8 sm:py-4",
-                  isActive
-                    ? "scale-110 sm:scale-125 opacity-100 z-10 shadow-2xl"
-                    : "scale-90 opacity-60",
-                ].join(" ")}
-              >
-                <Image
-                  src={sponsor.src}
-                  alt={sponsor.name}
-                  width={300}
-                  height={50}
-                  className="object-contain"
-                />
-              </div>
-            );
-          })}
+        {/* Infinite scrolling marquee */}
+        <div className="mt-10 relative overflow-hidden">
+          {/* Wrapper that contains two identical sets for seamless looping */}
+          <div className="flex animate-sponsor-marquee will-change-transform">
+            {/* First set */}
+            {sponsors.map((sponsor, index) => (
+              <SponsorCard key={`set1-${sponsor.name}-${index}`} sponsor={sponsor} index={index} />
+            ))}
+            {/* Second set (duplicate for seamless loop) */}
+            {sponsors.map((sponsor, index) => (
+              <SponsorCard key={`set2-${sponsor.name}-${index}`} sponsor={sponsor} index={index + sponsors.length} />
+            ))}
+          </div>
         </div>
 
-        <div className="mt-10 h-px w-full bg-[#f5eadd]/70" />
+        <div className="mt-12 h-px w-full bg-[#f5eadd]/30" />
       </div>
     </section>
   );

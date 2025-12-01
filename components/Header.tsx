@@ -6,11 +6,11 @@ import { useState } from "react";
 import { asset } from "@/lib/assets";
 
 const navItems = [
+  { label: "ABOUT", href: "/about" },
   { label: "OUR TEAM", href: "/team" },
   { label: "COMMITTEES", href: "/committees" },
-  { label: "ABOUT", href: "/about" },
-  { label: "CALENDAR", href: "/calendar" },
   { label: "VENUE", href: "/venue" },
+  { label: "CALENDAR", href: "/calendar" },
   { label: "FAQ", href: "/faq" },
   { label: "CONTACT", href: "/contact" },
 ];

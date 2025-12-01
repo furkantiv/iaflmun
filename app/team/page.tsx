@@ -3,34 +3,40 @@ import { asset } from "@/lib/assets";
 
 const teamMembers = [
   {
-    name: "Aylin Demir",
+    name: "Melek Mamar",
     role: "Secretary-General",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Melek Mamar is the Secretary-General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
-    name: "Kerem Yildiz",
-    role: "Director-General",
+    name: "Ada Kahraman",
+    role: "Secretary General",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Ada Kahraman is the Secretary General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
-    name: "Selin Kara",
-    role: "Head of Academics",
+    name: "Zeynep Yıldız",
+    role: "Deputy Secretary General",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Zeynep Yıldız is the Deputy Secretary General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
-    name: "Mert Can",
-    role: "Head of Logistics",
+    name: "Berra Can",
+    role: "Directory General / Head of Finance",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Berra Can is the Directory General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
-    name: "Deniz Acar",
+    name: "Gamze Elif Kanat",
     role: "Head of Public Relations",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Gamze Elif Kanat is the Head of Public Relations of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
-    name: "Naz Sönmez",
-    role: "Head of Finance",
+    name: "Begüm Tekin",
+    role: "Deputy Head of Public Relations",
     photo: asset("/images/team/placeholder.svg"),
+    bio: "Begüm Tekin is the Deputy Head of Public Relations of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
 ];
 
@@ -47,10 +53,7 @@ export default function TeamPage() {
         <div className="text-center space-y-4">
           <p className="section-label">OUR TEAM</p>
           <h1 className="section-title">The Faces Behind IAFLMUN</h1>
-          <p className="section-subtitle text-base md:text-lg max-w-2xl mx-auto">
-            A collective of driven students shaping an immersive diplomatic
-            experience. Each card highlights a lead member of our Secretariat.
-          </p>
+          
         </div>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -59,16 +62,7 @@ export default function TeamPage() {
               key={member.name}
               className="surface-card surface-card--tint overflow-hidden flex flex-col"
             >
-              <div className="relative w-full aspect-[4/3] bg-[#5a0000]/5">
-                <Image
-                  src={member.photo}
-                  alt={`${member.name} headshot`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#000]/0 to-[#000]/30" />
-              </div>
+              
 
               <div className="p-6 flex-1 flex flex-col">
                 <h2 className="text-2xl font-semibold text-[#3a0000]">
@@ -77,10 +71,9 @@ export default function TeamPage() {
                 <p className="mt-2 text-sm font-medium uppercase tracking-wide text-[#5a0000]/80">
                   {member.role}
                 </p>
-                <p className="mt-4 text-sm text-[#5a0000]/70">
-                  Passionate about diplomacy, innovation, and creating memorable
-                  conference experiences for every delegate.
-                </p>
+               {/* <p className="mt-2 text-sm text-[#5a0000]/80">
+                  {member.bio}
+                </p> */}
               </div>
             </article>
           ))}

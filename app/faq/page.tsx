@@ -2,29 +2,44 @@ import FAQAccordion from "@/components/FAQAccordion";
 
 const faqItems = [
   {
-    question: "What are the conference dates?",
+    question: "What are the official rules of procedure (RoP) of IAFLMUN?",
     answer:
-      "IAFLMUN 2025 runs 12–14 December. Delegates should arrive on the evening of 11 December for registration and the welcome reception.",
+      "IAFLMUN will follow the HarvardMUN",
   },
   {
-    question: "Is housing provided?",
+    question: "Is IAFLMUN suitable for the non-experienced?",
     answer:
       "Yes, partner hotels within walking distance of the venue offer discounted packages. Host-family placements are limited and prioritized for international delegations.",
   },
   {
-    question: "How can I apply for financial aid?",
+    question: "Is it mandatory to participate in all the sessions?",
     answer:
-      "Submit the scholarship addendum during registration. We request a recommendation letter and a short personal statement to match you with available grants.",
+      "No, you can be absent for 2 sessions. If you were absent for 3 sessions, you won't be receiving an award, if you were absent for 4 sessions, you won't receive a participation certificate.",
   },
   {
-    question: "Do I need prior MUN experience?",
+    question: "What is the dress code?",
     answer:
-      "Beginners are encouraged! Our mentorship pods and moderated trainings ensure everyone feels ready before the first session gavels in.",
+      "Our dress code is Western Business Attire.",
   },
   {
-    question: "Will sessions be hybrid or in-person?",
+    question: "Where will the conference be held?",
     answer:
-      "All committees are in-person to protect the boutique experience. Select panels and keynotes will be streamed for registered guests.",
+      "At Istanbul Medeniyet University Goztepe, North Campus. You can find more information about the address at the venue page.",
+  },
+  {
+    question: "Will there be accommodation provided?",
+    answer:
+      "No, unfortunately there won’t be any accommodation provided.",
+  },
+  {
+    question: "Are international students allowed to apply?",
+    answer:
+      "No, unfortunately. We are currently unable to accept applications from outside Turkiye..",
+  },
+  {
+    question: "How can we learn more about the conference?",
+    answer:
+      "You can contact us via e-mail for any further questions through the e-mail address provided in the contact us section.",
   },
 ];
 
