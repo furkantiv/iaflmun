@@ -12,7 +12,7 @@ The primary goals were:
 - Offer easy access to registration  
 - Deliver a quick and reliable hosting setup with a custom domain  
 
-This project was built for **educational/community purposes**, not as a production-grade product.
+This project was built for **educational/community and f purposes**, not as a production-grade product.
 
 ---
 
@@ -21,18 +21,20 @@ I chose to keep this repository open because:
 
 - It might help students organizing similar MUN events  
 - The structure is lightweight and beginner-friendly  
-- Transparency can inspire others learning web development  
+- Transparency can inspire others learning web development
+- Also for free hosting from Github Pages :D
 
 > ⚠️ **Note:**  
-> This project is *not* intended to reflect my professional code quality or enterprise-level work.  
+> This project is *not* intended to reflect my professional code quality or *enterprise-level* work.  
 > It was created quickly as a supportive gesture and intentionally kept small in scope.
 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML, CSS, JavaScript**
-- **Vite** (optional depending on build preference)
-- **GitHub Pages** for static hosting
+- **Next.js** – App Router, optimized static export  
+- **TypeScript** – strong typing & maintainability  
+- **Tailwind CSS** – fast, utility-first styling  
+- **GitHub Pages** – static deployment  
 
 ---
 
