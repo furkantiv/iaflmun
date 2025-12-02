@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌍 MUN Event Website
 
-## Getting Started
+A small volunteer project for my cousin’s high-school MUN conference.
 
-First, run the development server:
+📌 About This Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This website was created as a simple, fast, and clean site to help my younger cousin promote and organize their high-school Model United Nations (MUN) event.
+The goal was to provide them with:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A modern and mobile-friendly landing page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Basic event information: committees, schedule, venue
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+An easy way for students to access the registration form
 
-## Learn More
+A domain + lightweight hosting setup
 
-To learn more about Next.js, take a look at the following resources:
+This project is intentionally minimal and designed for educational / community purposes, not as a commercial product.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 Why This Repository Is Public
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I decided to keep this repository public because:
 
-## Deploy on Vercel
+It may help other students running small MUN events
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+It provides a simple starter template for similar school projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The codebase is intentionally lightweight and beginner-friendly
+
+Transparency encourages other students to learn from real examples
+
+Also GitHub Pages for free hosting :D
+
+🔔 Note: This project is not representative of my professional code quality or enterprise-level work.
+It was built quickly as a supportive gesture and is scoped intentionally small.
+
+🛠️ Tech Stack
+
+HTML + CSS + JavaScript
+
+Vite (optional, depending on your setup)
+
+GitHub Pages for free hosting
+
+🚀 Deployment
+
+The site is deployed via GitHub Pages, making it easy for students to reuse or clone for their own events.
+
+🤝 Credits
+
+This project was created with love to support my cousin’s enthusiasm for MUN.
+
+If you're a student organizing a similar event and want to reuse or adapt this template, feel free — I’m happy if it helps.
+
+📬 Contact
+
+If you want to see more of my actual work, visit my portfolio or feel free to reach out.
