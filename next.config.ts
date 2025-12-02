@@ -1,11 +1,15 @@
 import type { NextConfig } from "next";
 
+// For custom domains, NEXT_PUBLIC_BASE_PATH should be empty or unset
+// Only use basePath if explicitly set and not empty
 const repoBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-const isProd = process.env.NODE_ENV === "production" && !!repoBasePath;
+const useBasePath = repoBasePath && repoBasePath !== "";
 
 const nextConfig: NextConfig = {
-  basePath: isProd ? repoBasePath : undefined,
-  assetPrefix: isProd ? repoBasePath : undefined,
+  // Only set basePath if explicitly provided (for GitHub Pages without custom domain)
+  // For custom domains like iaflmun.com, leave this undefined
+  basePath: useBasePath ? repoBasePath : undefined,
+  assetPrefix: useBasePath ? repoBasePath : undefined,
   images: {
     unoptimized: true,
   },
