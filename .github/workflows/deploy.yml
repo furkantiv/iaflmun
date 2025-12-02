@@ -30,13 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Determine base path
+      - name: Set base path for custom domain
         run: |
-          if [[ "${{ github.repository }}" == "${{ github.repository_owner }}/${{ github.repository_owner }}.github.io" ]]; then
-            echo "NEXT_PUBLIC_BASE_PATH=" >> $GITHUB_ENV
-          else
-            echo "NEXT_PUBLIC_BASE_PATH=/${{ github.event.repository.name }}" >> $GITHUB_ENV
-          fi
+          # For custom domains (iaflmun.com), basePath should be empty
+          # Only use basePath for GitHub Pages subdomain deployments
+          echo "NEXT_PUBLIC_BASE_PATH=" >> $GITHUB_ENV
 
       - name: Build static site
         run: npm run build

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 
 interface CommitteeModalProps {
   isOpen: boolean;
@@ -13,12 +14,14 @@ interface CommitteeModalProps {
     description: string;
     driveLink: string;
   } | null;
+  image: string | undefined;
 }
 
 export default function CommitteeModal({
   isOpen,
   onClose,
   committee,
+  image,
 }: CommitteeModalProps) {
   // Handle ESC key to close modal
   useEffect(() => {
@@ -52,9 +55,12 @@ export default function CommitteeModal({
       >
         {/* Modal Content */}
         <div
-          className={`relative ${committee.tone} rounded-3xl border border-white/20 shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}
+          className={`relative ${committee.tone} rounded-3xl border border-white/20 shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative overflow-hidden`}
           onClick={(e) => e.stopPropagation()}
         >
+          {image && (
+            <Image src={image} alt={committee?.name || ""} width={100} height={100} priority className="w-full opacity-10 h-full object-cover absolute top-0 left-0 z-0" />
+          )}
           {/* Close button */}
           <button
             onClick={onClose}
