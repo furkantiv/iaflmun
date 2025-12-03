@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 MUN Event Website  
+*A small volunteer project for my cousin’s high-school MUN conference.*
 
-## Getting Started
+---
 
-First, run the development server:
+## 📌 About This Project
+This website was created as a **simple, modern, and clean landing page** to support my younger cousin’s high-school **Model United Nations (MUN)** event.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The primary goals were:
+- Provide a mobile-friendly information page  
+- Present event details such as committees, schedule, and venue  
+- Offer easy access to registration  
+- Deliver a quick and reliable hosting setup with a custom domain  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was built for **educational/community and f purposes**, not as a production-grade product.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Why This Repository Is Public
+I chose to keep this repository open because:
 
-## Learn More
+- It might help students organizing similar MUN events  
+- The structure is lightweight and beginner-friendly  
+- Transparency can inspire others learning web development
+- Also for free hosting from Github Pages :D
 
-To learn more about Next.js, take a look at the following resources:
+> ⚠️ **Note:**  
+> This project is *not* intended to reflect my professional code quality or *enterprise-level* work.  
+> It was created quickly as a supportive gesture and intentionally kept small in scope.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
+- **Next.js** – App Router, optimized static export  
+- **TypeScript** – strong typing & maintainability  
+- **Tailwind CSS** – fast, utility-first styling  
+- **GitHub Pages** – static deployment  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
+The website is hosted on **GitHub Pages**, making it easy to clone, edit, and redeploy for other school-level projects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Credits
+Built with ❤️ to support my cousin’s passion for MUN.
+
+If you are a student organizing a similar event, feel free to fork/reuse this template.  
+Sharing knowledge is always a win.
+
+---
+
+## 📬 Contact
+If you'd like to see more of my work, you can reach me anytime or check out my portfolio for professional projects.
