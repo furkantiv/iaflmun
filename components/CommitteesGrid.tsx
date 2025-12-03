@@ -49,12 +49,12 @@ const committees: Committee[] = [
   {
     name: "NATO",
     level: "SPECIAL",
-    theme: "Reassessing NATO’s Nuclear Deterrence Policy Amidst Rising Global Security Challenges",
+    theme: "Reassessing NATO’s Nuclear Deterrence Policy Amidst Rising Global Security Challenges",
     tone: "bg-gradient-to-br from-[#1f3a31] to-[#3d7761]",
     image: asset("/images/committees/nato.jpg"),
     description:
       "Formed in 1949 with the signing of the Washington Treaty, NATO is a security alliance of 32 countries from North America and Europe. NATO’s fundamental goal is to safeguard the Allies’ freedom and security by political and military means, which entails renewing defence mechanisms and sustainable deterrence policies against rising worldwide threats, as NATO remains the principal security instrument of the transatlantic community.In this committee, delegates must fully grasp the significance of the nuclear policies' broad effects, requiring a new focus on the resilience of NATO's nuclear sharing arrangements against systemic and asymmetric global threats.",
-    driveLink: "https://drive.google.com",
+    driveLink: "https://drive.google.com/file/d/1TmVrNXjDwMY6WK7QKxMOBdGF0LlvcP22/view?usp=sharing",
   },
   {
     name: "European Council",
