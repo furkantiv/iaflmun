@@ -9,7 +9,7 @@ const faqItems = [
   {
     question: "Is IAFLMUN suitable for the non-experienced?",
     answer:
-      "Yes, partner hotels within walking distance of the venue offer discounted packages. Host-family placements are limited and prioritized for international delegations.",
+      "Yes, our conference has committees suitable for first-timers. It's up to your choice but many first-timers start with GA’s.",
   },
   {
     question: "Is it mandatory to participate in all the sessions?",

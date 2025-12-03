@@ -97,8 +97,7 @@ export default function Hero() {
 
         {/* Alıntı */}
         <p className="mt-6 max-w-3xl mx-auto text-sm sm:text-base italic text-[#f5eadd]">
-          “Gratulationes. Textum Latinum interpretatus es; ut speravi. Magnum
-          tibi diem opto.”
+        Where vision becomes voice”
         </p>
       </div>
     </section>

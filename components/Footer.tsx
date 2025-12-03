@@ -86,8 +86,7 @@ export default function Footer() {
               IAFLMUN<span className="text-[#eab07c]">25</span>
             </span>
             <p className="text-sm italic text-[#f5eadd]/80 max-w-sm">
-              “Gratulationes. Textum Latinum interpretatus es; ut speravi.
-              Magnum tibi diem opto.”
+                Where vision becomes voice”
             </p>
           </Link>
         </div>
@@ -154,7 +153,7 @@ export default function Footer() {
 
       <div className="mt-12 flex flex-col sm:flex-row items-center justify-between text-xs text-[#f5eadd]/70">
         <p>© iaflmun2025</p>
-        <p>Crafted in Istanbul</p>
+        <p>Crafted with ❤️ by Furkan Turhan</p>
       </div>
     </footer>
   );
