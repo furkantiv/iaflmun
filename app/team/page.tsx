@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: "Berra Can",
-    role: "Directory General / Head of Finance",
+    role: "Directory General",
     photo: asset("/images/team/placeholder.svg"),
     bio: "Berra Can is the Directory General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
