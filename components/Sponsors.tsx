@@ -10,7 +10,6 @@ type Sponsor = {
 };
 
 const sponsors: Sponsor[] = [
-  { name: "Espressolab", src: asset("/images/sponsors/espressolab.png") },
   { name: "PIN", src: asset("/images/sponsors/pin.png") },
   { name: "BeanQ Coffee" },
   { name: "Morfose" },
@@ -18,11 +17,10 @@ const sponsors: Sponsor[] = [
   { name: "Çiğköfteci Ömer Aybak" },
   { name: "Kızılay Natural Mineral Water" },
   { name: "Frango Döner" },
-  { name: "PIN Drinks" },
   { name: "Kuzey Yapı" },
+  { name: "B Helluva Studio"},
   { name: "Uyumsoft" },
   { name: "Mostra Social" },
-  { name: "B Helluva Studio"},
 ];
 
 export default function Sponsors() {

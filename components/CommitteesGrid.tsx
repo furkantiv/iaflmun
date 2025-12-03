@@ -49,7 +49,7 @@ const committees: Committee[] = [
   {
     name: "NATO",
     level: "SPECIAL",
-    theme: "Financing climate adaptation for vulnerable nations",
+    theme: "Reassessing NATO’s Nuclear Deterrence Policy Amidst Rising Global Security Challenges",
     tone: "bg-gradient-to-br from-[#1f3a31] to-[#3d7761]",
     image: asset("/images/committees/nato.jpg"),
     description:

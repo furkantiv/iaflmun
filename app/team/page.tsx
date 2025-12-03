@@ -15,16 +15,16 @@ const teamMembers = [
     bio: "Ada Kahraman is the Secretary General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
+    name: "Berra Can",
+    role: "Director General",
+    photo: asset("/images/team/placeholder.svg"),
+    bio: "Berra Can is the Director General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
+  },
+  {
     name: "Zeynep Yıldız",
     role: "Deputy Secretary General",
     photo: asset("/images/team/placeholder.svg"),
     bio: "Zeynep Yıldız is the Deputy Secretary General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
-  },
-  {
-    name: "Berra Can",
-    role: "Directory General",
-    photo: asset("/images/team/placeholder.svg"),
-    bio: "Berra Can is the Directory General of IAFLMUN. She is a student at the University of Istanbul and a member of the IAFLMUN team. She is passionate about diplomacy and international relations.",
   },
   {
     name: "Gamze Elif Kanat",

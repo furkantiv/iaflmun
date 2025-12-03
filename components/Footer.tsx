@@ -86,7 +86,7 @@ export default function Footer() {
               IAFLMUN<span className="text-[#eab07c]">25</span>
             </span>
             <p className="text-sm italic text-[#f5eadd]/80 max-w-sm">
-                Where vision becomes voice”
+                Where vision becomes voice
             </p>
           </Link>
         </div>

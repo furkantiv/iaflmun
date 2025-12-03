@@ -97,7 +97,7 @@ export default function Hero() {
 
         {/* Alıntı */}
         <p className="mt-6 max-w-3xl mx-auto text-sm sm:text-base italic text-[#f5eadd]">
-        Where vision becomes voice”
+        Where vision becomes voice
         </p>
       </div>
     </section>
